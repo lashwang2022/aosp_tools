@@ -29,8 +29,13 @@ mkdir -p $link_root
 for module in ${module_list[@]}
 do
     if [ -d $project_path/$module ];then
-        module_path=`dirname $link_root/$module`
+        module_path=$(dirname $link_root/$module)
         mkdir -p  $module_path
+        ln -s $project_path/$module $module_path/.
+    elif [ -f $project_path/$module ];then
+        # 处理文件
+        module_path=$(dirname $link_root/$(dirname $module))
+        mkdir -p $module_path
         ln -s $project_path/$module $module_path/.
     else
         echo "$project_path/$module not exist"

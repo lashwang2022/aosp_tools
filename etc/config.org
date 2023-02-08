@@ -17,4 +17,5 @@ packages/apps/Settings
 packages/apps/Bluetooth
 packages/providers/
 system/
+frameworks/
 

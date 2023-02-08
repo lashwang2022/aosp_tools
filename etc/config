@@ -8,6 +8,7 @@ external/bouncycastle
 external/conscrypt
 external/guava
 external/openssh
+frameworks/
 hardware
 libcore
 libnativehelper
