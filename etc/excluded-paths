@@ -1,0 +1,46 @@
+# Exclude non-java projects
+^art
+^bionic
+^bootable
+^build
+^compatibility
+^cts
+^dalvik
+^developers
+^development
+^device
+^docs
+^external
+^kernel
+
+^libnativehelper
+^mkcombinedroot
+^pdk
+^platform_testing
+^prebuilts
+^rkbin
+^RKDocs
+^rkst
+^RKTools
+^rockdev
+^sdk
+^test
+^toolchain
+^tools
+^u-boot
+^vendor/rockchip
+
+# Exclude non-java projects in out/soong/.intermediates
+^out
+
+# exclude grandstream files
+^vendor/grandstream/frameworks/adapters
+^vendor/grandstream/serviceapps/.*\.jar$
+^vendor/grandstream/serviceapps/GsApiClient/apidoc/stubs
+^vendor/grandstream/.*gsframework\.jar$
+^vendor/grandstream/.*framework\.jar$
+^vendor/grandstream/.*gsapi\.jar$
+^vendor/grandstream/.*gs-common\.jar$
+^vendor/grandstream/packages/apps/SystemManager/gslibs/.*\.jar$
+^vendor/grandstream/frameworks/adapters
+
