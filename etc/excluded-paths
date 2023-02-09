@@ -1,5 +1,5 @@
 # Exclude non-java projects
-^art
+#^art
 ^bionic
 ^bootable
 ^build
