@@ -15,6 +15,7 @@ hardware
 libcore
 libnativehelper
 packages/apps/Bluetooth
+packages/apps/CertInstaller
 packages/apps/Settings
 packages/providers/
 system/

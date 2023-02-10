@@ -19,6 +19,12 @@ if [ ! -d "$project_path" ];then
     exit 1
 fi
 
+if [ -d "$project_path/android" ];then
+    project_path="$project_path/android/"
+    link_root="/data/ide/$project/android/"
+fi
+
+
 module_list=$(awk 'NF' /opt/aosp/etc/config)
 #echo "$path_list"
 
