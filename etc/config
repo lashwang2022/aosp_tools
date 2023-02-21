@@ -18,6 +18,7 @@ packages/apps/Bluetooth
 packages/apps/CertInstaller
 packages/apps/Settings
 packages/providers/
+packages/modules/
 system/
 vendor/crestron
 vendor/grandstream
