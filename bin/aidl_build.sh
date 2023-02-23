@@ -7,21 +7,18 @@ if test -z "$ANDROID_BUILD_TOP"; then
   exit 1
 fi
 
-aidlFiles=$(find $ANDROID_BUILD_TOP/frameworks/base/ -name *.aidl -not -path "*/*tests/*")
-aidlIncludeFiles=$(find $ANDROID_BUILD_TOP/frameworks/base/ -type d -name java -not -path "*/*tests/*" -exec echo -n "-I{}/ " \;)
-aidlIncludeFiles="-I$ANDROID_BUILD_TOP/frameworks/native/aidl/binder/ $aidlIncludeFiles "
+IDE_LIBS=$ANDROID_BUILD_TOP/development/tools/idegen/ide_libs/
+rm -rf $IDE_LIBS
+mkdir $IDE_LIBS
 
-mkdir $ANDROID_BUILD_TOP/aidlfiles/
-
-cd $ANDROID_BUILD_TOP/aidlfiles/
-rm -rf framework_base_aidl
-for af in $aidlFiles; do
-    echo "generating $af"
-    # aidl -o framework_base_aidl $aidlIncludeFiles $af
-    # if [ $? -eq 0 ]; then
-    #     exit 1
-    # fi
+cd $ANDROID_BUILD_TOP/out/target/common/obj/JAVA_LIBRARIES/
+all_libs=$(find -maxdepth 1 -type d -not -path '\.' -exec basename {} \; | sort -h)
+suffix="_intermediates"
+for al in $all_libs; do
+  _tmp=${al/%$suffix}
+  #echo "$_tmp"
+  ln -sf $ANDROID_BUILD_TOP/out/target/common/obj/JAVA_LIBRARIES/$al/classes.jar $IDE_LIBS/$_tmp.jar
 done
 
-cd -
+cd - > /dev/null
 echo "done."
