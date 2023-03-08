@@ -43,4 +43,7 @@
 ^vendor/grandstream/.*gs-common\.jar$
 ^vendor/grandstream/packages/apps/SystemManager/gslibs/.*\.jar$
 ^vendor/grandstream/frameworks/adapters
+^vendor/crestron/.*\.jar$
+^vendor/grandstream/packages/apps/.*\.jar$
+
 
