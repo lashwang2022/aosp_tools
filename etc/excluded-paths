@@ -26,7 +26,6 @@
 ^sdk
 ^test
 ^toolchain
-^tools
 ^u-boot
 ^vendor/rockchip
 
@@ -46,4 +45,6 @@
 ^vendor/crestron/.*\.jar$
 ^vendor/grandstream/packages/apps/.*\.jar$
 
+# java sdk
+^libcore/ojluni/annotations
 

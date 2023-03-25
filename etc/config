@@ -22,3 +22,4 @@ packages/modules/
 system/
 vendor/crestron
 vendor/grandstream
+tools/platform-compat
