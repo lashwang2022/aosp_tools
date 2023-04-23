@@ -19,6 +19,7 @@ packages/apps/CertInstaller
 packages/apps/Settings
 packages/providers/
 packages/modules/
+packages/services/
 system/
 vendor/crestron
 vendor/grandstream
