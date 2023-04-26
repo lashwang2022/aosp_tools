@@ -24,10 +24,10 @@ system/
 vendor/crestron
 vendor/grandstream
 tools/platform-compat
-out/soong/.intermediates
 external/golang-protobuf
 external/starlark-go
 external/go-cmp
 external/icu
 tools/metalava
+gen_cache
 

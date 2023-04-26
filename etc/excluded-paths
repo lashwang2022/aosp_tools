@@ -30,8 +30,8 @@
 ^vendor/rockchip
 
 # Exclude non-java projects in out/soong/.intermediates
-#^out
-^out/target
+^out
+#^out/target
 
 
 
