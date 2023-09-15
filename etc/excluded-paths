@@ -5,7 +5,6 @@
 ^build
 ^compatibility
 ^cts
-^dalvik
 ^developers
 #^development
 ^device
@@ -29,9 +28,6 @@
 ^u-boot
 ^vendor/rockchip
 
-# Exclude non-java projects in out/soong/.intermediates
-^out
-#^out/target
 
 
 

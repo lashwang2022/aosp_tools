@@ -20,6 +20,7 @@ packages/apps/Settings
 packages/providers/
 packages/modules/
 packages/services/
+packages/inputmethods/
 system/
 vendor/crestron
 vendor/grandstream
@@ -29,5 +30,4 @@ external/starlark-go
 external/go-cmp
 external/icu
 tools/metalava
-gen_cache
-
+out/soong/auto_gen_java
