@@ -1,3 +1,4 @@
+.repo
 android.iml
 android.ipr
 art
@@ -21,9 +22,9 @@ packages/providers/
 packages/modules/
 packages/services/
 packages/inputmethods/
+packages/apps/KeyChain/
 system/
-vendor/crestron
-vendor/grandstream
+vendor/
 tools/platform-compat
 external/golang-protobuf
 external/starlark-go
@@ -31,3 +32,4 @@ external/go-cmp
 external/icu
 tools/metalava
 out/soong/auto_gen_java
+out/development/ide/
